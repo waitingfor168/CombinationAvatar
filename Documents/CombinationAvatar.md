@@ -32,8 +32,8 @@ image的重行绘制使用`drawRect:(CGRect)rect`，接下来的就和数学有�
     [_image drawInRect:CGRectMake(_cycleStroke / 2.0, _cycleStroke / 2.0, _cycleRadius * 2.0, _cycleRadius * 2.0)];
 
 ### 三：组装生成的每个缺口的图片
-  这又是一个数学题，在指定大小的正方形内分别内部圆心相互相切与外部的正放心边框内切，是不是有点难懂，还是看图吧：
-  <!--![ScreenShot](Images/ScreenShot.jpg)-->
+  这又是一个数学题，在指定大小的正方形内分别内部圆心相互相切与外部的正放心边框内切，是不是有点难懂，还是看图吧.这里为什么使用三个的头像作为演示呢，因为爷在这掉坑里了，三个小圆应该是正方形内切圆的内切三个小圆而不是直接是正方形的内切三个小圆：
+  ![ScreenShot](Images/image00.jpg)
   针对每个不懂数目的头像算出内切圆的半径，坐标，
   	
   	CGPoint point0 = CGPointMake(0, -radius);
