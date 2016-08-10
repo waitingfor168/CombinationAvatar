@@ -14,4 +14,4 @@ HJCombinationAvatar combinationAvatar = [HJCombinationAvatar combinationAvatarWi
     
 * ScreenShot
 
-   ![ScreenShot](ScreenShot.jpg)
+   ![ScreenShot](Documents/Images/ScreenShot.jpg)
