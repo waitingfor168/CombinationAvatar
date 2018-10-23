@@ -192,7 +192,7 @@
 
 - (UIImage *)imageRenderView:(UIView *)view
 {
-    UIGraphicsBeginImageContext(view.bounds.size);
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, [[UIScreen mainScreen] scale]);
     CGContextRef currnetContext = UIGraphicsGetCurrentContext();
     [view.layer renderInContext:currnetContext];
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
